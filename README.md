@@ -1,2 +1,2 @@
 # bicirepuestosdavid.github.io
-Página Web Personal de Angel Alvites Mayta
+Página Web Informativa de la empresa Bicirepuestos David
