@@ -10,10 +10,11 @@ body{
     z-index: 9999;
     width: 100%;
     top: 2%;
+    bottom: 94.5%;
 }
 
 #msjBienvenida{
-    animation: moverTitulo 20s linear infinite; /*Dar movimiento al texto*/
+    animation: moverTitulo 20s linear infinite; /*Dar movimiento al texto, tiempo de velocidad*/
     font-size: 80%;
     color:white;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -26,17 +27,18 @@ body{
         margin-left: 0;
     }
     to{
-        margin-left: 74%;
+        margin-left: 100%;
     }
 }
 
+/*Titulo Bici Repuestos David*/
 .msjTitulo{
     color:rgb(29, 119, 179);
     text-align: center;
     font-family: 'Times New Roman', Times, serif; /*Tipo de letra*/
     font-size: 300%;
     font-weight: bold; /*poner en negrita el texto*/
-    margin-top: 4%; /*Dar espacio en la parte superior*/
+    margin-top: 5%; /*Dar espacio en la parte superior*/
 
     /*text-shadow: 2px 2px 4px rgba(14, 47, 156, 0.5) ;*/  /*para agregar sombra*/
 }
@@ -94,10 +96,10 @@ section{
 text-align: center;
 margin-top: 4%;
 margin-bottom: 4%;
-
 }
 .btn-info{
 background-color: rgb(0, 153, 255);
 font-weight: bold;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
 }
