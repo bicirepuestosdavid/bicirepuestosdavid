@@ -1,0 +1,77 @@
+body{
+    background-color: white;
+}
+
+/*Mensaje de bienvenida en movimiento*/
+#titulo-container{
+    background-color: rgb(0, 153, 255);
+    overflow: hidden; /*Dar movimiento al texto*/
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 2%;
+    bottom: 95%;
+}
+
+#msjBienvenida{
+    animation: moverTitulo 20s linear infinite; /*Dar movimiento al texto, tiempo de velocidad*/
+    font-size: 80%;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5%; /*Dar espacio en la parte inferior*/
+    margin-top: 0.5%;
+}
+/*Dar movimiento al texto*/
+@keyframes moverTitulo{
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 100%;
+    }
+}
+
+/*Titulo Bici Repuestos David*/
+.msjTitulo{
+    color:rgb(29, 119, 179);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /*Tipo de letra*/
+    font-size: 300%;
+    font-weight: bold; /*poner en negrita el texto*/
+    margin-top: 5%; /*Dar espacio en la parte superior*/
+
+    /*text-shadow: 2px 2px 4px rgba(14, 47, 156, 0.5) ;*/  /*para agregar sombra*/
+}
+.msjSubtitulo{
+    color:rgb(29, 119, 179);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /*Tipo de letra*/
+    font-size: 150%;
+    font-weight: bold; /*poner en negrita el texto*/
+    /*margin-top: 5%; Dar espacio en la parte superior*/  
+}
+
+/*Navbar*/
+nav{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.imgLogo{
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 6%; /*Tamaño del logo*/
+}
+
+  /*Barra Social*/
+.barrasocial{
+    position: fixed;
+    right: 0%;
+    top: 40%;
+    z-index: 9999;
+    list-style-type: none;
+}
+.barrasocial li{
+    list-style-type: none;
+    background-color: white;
+}
