@@ -75,3 +75,28 @@ nav{
     list-style-type: none;
     background-color: white;
 }
+
+/*MAPA*/
+#mapa{
+    text-align: center;
+}
+
+/*Links contactos*/
+.linkContacto{
+    text-align: center;
+}
+
+/*Configurar la longitud de la linea hr entre los contactos*/
+#hrcontacto{
+margin-left: 40%;
+margin-right: 40%;
+color:black;
+}
+
+/*Configurar el subtitulo mapa*/
+#subtituloMapa{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
