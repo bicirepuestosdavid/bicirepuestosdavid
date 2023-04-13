@@ -28,42 +28,45 @@
             <h1 class="msjSubtitulo">¡Estamos aquí para ayudarte a encontrar las piezas perfectas para tu bicicleta!</h1>
        </Header>
 
+      <div class="navbar">
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <img class="imgLogo" src="images/logo.png" alt="Logo">
+            <img class="imgLogo" src="images/logo1.png" alt="Logo">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">INICIO</a>
+              <a class="navbar-brand" href="index.html">Bici Repuestos David</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ACCESORIOS</a>
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      REPUESTOS
+                      Accesorios
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">HERRAMIENTAS Y LUBRICANTES</a></li>
+                      <li><a class="dropdown-item" href="#">SEGURIDAD Y LUCES</a></li>
+                      <li><a class="dropdown-item" href="#">INDUMENTARIA</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">ACCESORIOS VARIOS</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      HERRAMIENTAS
+                      Productos
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">BICICLETAS</a></li>
+                      <li><a class="dropdown-item" href="#">CUADROS</a></li>
+                      <li><a class="dropdown-item" href="#">SUSPENSIONES</a></li>
+                      <li><a class="dropdown-item" href="#">AROS Y LLANTAS</a></li>
+                      <li><a class="dropdown-item" href="#">SISTEMA DE FRENOS</a></li>
+                      <li><a class="dropdown-item" href="#">SISTEMA DE ARRASTRE</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">NUEVOS PRODUCTOS</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -71,19 +74,52 @@
                       MARCAS
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">SHIMANO</a></li>
+                      <li><a class="dropdown-item" href="#">DABOM</a></li>
+                      <li><a class="dropdown-item" href="#">SKULL</a></li>
+                      <li><a class="dropdown-item" href="#">BRACKO</a></li>
                     </ul>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- Formulario para buscar -->
+                <form class="d-flex" role="search" id="search-form">
                   <input class="form-control me-2" type="search" placeholder="Busca aqui Rider" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  <button class="btn btn-info" type="submit">Buscar</button>
                 </form>
+                
+                <script>
+                  const form = document.getElementById('search-form');
+                  const input = document.querySelector('#search-form input[type="search"]');
+                
+                  form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                
+                    // Obtener el valor del input de búsqueda
+                    const searchTerm = input.value.trim().toLowerCase();
+                
+                    // Buscar los títulos de las etiquetas h5
+                    const titles = document.getElementsByTagName('h5');
+                
+                    // Iterar sobre los títulos y buscar la coincidencia
+                    for (let i = 0; i < titles.length; i++) {
+                      const title = titles[i];
+                      const titleText = title.textContent.trim().toLowerCase();
+                
+                      // Si se encuentra la coincidencia, redireccionar a la página
+                      if (titleText.includes(searchTerm)) {
+                        window.location.href = title.closest('a').href;
+                        return;
+                      }
+
+                    }
+                
+                    // Si no se encontró la coincidencia, mostrar un mensaje de error
+                    alert('No se encontraron resultados');
+                  });
+                </script>
               </div>
             </div>
         </nav>
+      </div>
 
         <!-- barra social -->
         <div class="barrasocial">
@@ -94,41 +130,40 @@
             <li><a href="https://wa.me/qr/W5GUPQYH6R4NH1" target="_blank"><img src="images/iconos/whatsapp.png" ></a></li>
           </ul>
         </div> 
-        <!-- Article con links de contacto -->
+      <!-- Article con links de contacto -->
         <article>
-          <section>
+          <div class="imgTransparente">
+            <img id="trans" src="images/fotoExterior.jpg" alt="Imagen transparente">
+            <section>
               <div class="linkContacto">
-                 <article>
-                     <h3>Call - WhatsApp</h3>
-                     <img  src="images/imgContactanos/whatsap.png" alt="APAM" width="" height="50" >
-                     <a href="https://wa.me/qr/W5GUPQYH6R4NH1">BICI REPUESTOS DAVID</a>
-                     <p>(+51) 954074235</p>
-                 </article>
-                 <hr id="hrcontacto">
-                 <article>
-                     <h3>Facebook</h3>
-                     <img  src="images/imgContactanos/facebook.png" alt="APAM" width="" height="50" >
-                     <a href="https://www.facebook.com/BicirepuestosDavid">BICI REPUESTOS DAVID</a>
-                 </article>
-                 <hr id="hrcontacto">
-                 <article>
-                     <h3>Instagram</h3>
-                     <img  src="images/imgContactanos/instagram.jpg" alt="APAM" width="" height="50" >
-                     <a href="https://instagram.com/bicirepuestosdavid?igshid=YmMyMTA2M2Y=">BICI REPUESTOS DAVID</a>
-                 </article>
-                 <hr id="hrcontacto">
+                <article>
+                    <h3>Call - WhatsApp</h3>
+                    <img  src="images/imgContactanos/whatsap.png" alt="APAM" width="" height="50" >
+                    <a href="https://wa.me/qr/W5GUPQYH6R4NH1">BICI REPUESTOS DAVID</a>
+                    <p>(+51) 954074235</p>
+                </article>
+                
+                <article>
+                    <h3>Facebook</h3>
+                    <img  src="images/imgContactanos/facebook.png" alt="APAM" width="" height="50" >
+                    <a href="https://www.facebook.com/BicirepuestosDavid">BICI REPUESTOS DAVID</a>
+                </article>
+                
+                <article>
+                    <h3>Instagram</h3>
+                    <img  src="images/imgContactanos/instagram.jpg" alt="APAM" width="" height="50" >
+                    <a href="https://instagram.com/bicirepuestosdavid?igshid=YmMyMTA2M2Y=">BICI REPUESTOS DAVID</a>
+                </article>
+               
               </div>
-          </section>
+            </section>
+          </div>     
             <!--Section - SubTitulo-->
           <Section>
             <h2 id="subtituloMapa">Mapa de Localización</h2>
           </Section>
           <!-- MAPA -->
-          <main>
-            <div id="mapa">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.8797473601533!2d-74.06498753913985!3d4.629969679148249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8a4db4b7e3a5%3A0xb5d5db288c5d5b95!2sCra.%208%20%2323-45%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1649001294816!5m2!1sen!2sus" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </main>
+              <img class="mapa" src="images/mapa.png" alt="Mapa de Cajamarca" >         
         </article>
       
         <!--Footer-->

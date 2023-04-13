@@ -55,12 +55,25 @@ nav{
     margin-left: 1%;
     width: 6%; /*Tamaño del logo*/
 }
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a.dropdown-item{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(29, 119, 179);
+}
+.btn-info{
+    background-color: rgb(29, 119, 179);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    }
 
   /*Barra Social*/
-.barrasocial{
+  .barrasocial{
     position: fixed;
     right: 0%;
-    top: 40%;
+    top: 75%;
     z-index: 9999;
     list-style-type: none;
 }
@@ -76,11 +89,7 @@ h2{
     margin-top: 2%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-left: 10%;
-}
-h2.subtitulo{
-    margin-left: 44%;
-    margin-right: 44%;
+    text-align: center;
 }
 
 section{
@@ -103,8 +112,8 @@ p.parrafo{
 .contenedor {
     position: relative;
     height: 100%; /*Cambiar el tamaño de la imagen*/
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 .contenedor img {
     position: absolute;
@@ -114,7 +123,13 @@ p.parrafo{
     width: 100%;
     object-fit: cover;
     opacity: 0.2; /*Cambiar el valor de transparencia de la imagen*/
+    z-index: -1;
 }
 
+/*Footer*/
+.footerConfi{
+    margin-left: 4%;
+    margin-right: 4%;
+}
   
   

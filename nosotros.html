@@ -27,61 +27,98 @@
        </Header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <img class="imgLogo" src="images/logo.png" alt="Logo">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">INICIO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ACCESORIOS</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      REPUESTOS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      HERRAMIENTAS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      MARCAS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  <li class="nav-item">
-                        <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Busca aqui Rider" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+        <div class="navbar">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <img class="imgLogo" src="images/logo1.png" alt="Logo">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Bici Repuestos David</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Accesorios
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">HERRAMIENTAS Y LUBRICANTES</a></li>
+                        <li><a class="dropdown-item" href="#">SEGURIDAD Y LUCES</a></li>
+                        <li><a class="dropdown-item" href="#">INDUMENTARIA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">ACCESORIOS VARIOS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">BICICLETAS</a></li>
+                        <li><a class="dropdown-item" href="#">CUADROS</a></li>
+                        <li><a class="dropdown-item" href="#">SUSPENSIONES</a></li>
+                        <li><a class="dropdown-item" href="#">AROS Y LLANTAS</a></li>
+                        <li><a class="dropdown-item" href="#">SISTEMA DE FRENOS</a></li>
+                        <li><a class="dropdown-item" href="#">SISTEMA DE ARRASTRE</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">NUEVOS PRODUCTOS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MARCAS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">SHIMANO</a></li>
+                        <li><a class="dropdown-item" href="#">DABOM</a></li>
+                        <li><a class="dropdown-item" href="#">SKULL</a></li>
+                        <li><a class="dropdown-item" href="#">BRACKO</a></li>
+                      </ul>
+                    <li class="nav-item">
+                          <a class="nav-link" href="contactenos.html">CONTÁCTENOS</a>
+                    </li>
+                  </ul>
+                  <!-- Formulario para buscar -->
+                  <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Busca aqui Rider" aria-label="Search">
+                    <button class="btn btn-info" type="submit">Buscar</button>
+                  </form>
+                  
+                  <script>
+                    const form = document.getElementById('search-form');
+                    const input = document.querySelector('#search-form input[type="search"]');
+                  
+                    form.addEventListener('submit', function(event) {
+                      event.preventDefault();
+                  
+                      // Obtener el valor del input de búsqueda
+                      const searchTerm = input.value.trim().toLowerCase();
+                  
+                      // Buscar los títulos de las etiquetas h5
+                      const titles = document.getElementsByTagName('h5');
+                  
+                      // Iterar sobre los títulos y buscar la coincidencia
+                      for (let i = 0; i < titles.length; i++) {
+                        const title = titles[i];
+                        const titleText = title.textContent.trim().toLowerCase();
+                  
+                        // Si se encuentra la coincidencia, redireccionar a la página
+                        if (titleText.includes(searchTerm)) {
+                          window.location.href = title.closest('a').href;
+                          return;
+                        }
+
+                      }
+                  
+                      // Si no se encontró la coincidencia, mostrar un mensaje de error
+                      alert('No se encontraron resultados');
+                    });
+                  </script>
+                </div>
               </div>
-            </div>
-        </nav>
+          </nav>
+        </div>
 
         <!-- barra social -->
         <div class="barrasocial">
@@ -115,30 +152,30 @@
                 </Section>
                  <!--Section - Objetivos-->
                 <Section>
-                    <h2>Objetivos</h2>
+                    <h2>OBJETIVOS</h2>
                     <ol class="objetivos"> <!--ol para enumerar una lista-->
-                        <li>Ser reconocidos como líderes en la industria de la movilidad sostenible.</li>
-                        <li>Proporcionar servicios de reparación, venta y mantenimiento de bicicletas 
-                            innovadores y personalizados que satisfagan las necesidades de los clientes más exigentes.</li>
-                        <li>Promover la adopción de la bicicleta como medio de transporte sostenible, contribuyendo a la 
-                            reducción de la huella de carbono y mejorando la calidad de vida de las personas.</li>
-                        <li>Fomentar una cultura de trabajo en equipo, innovación y responsabilidad social mediante la 
+                        <p>Ser reconocidos como líderes en la industria de la movilidad sostenible.</p>
+                        <p>Proporcionar servicios de reparación, venta y mantenimiento de bicicletas 
+                            innovadores y personalizados que satisfagan las necesidades de los clientes más exigentes.</ps>
+                        <p>Promover la adopción de la bicicleta como medio de transporte sostenible, contribuyendo a la 
+                            reducción de la huella de carbono y mejorando la calidad de vida de las personas.</p>
+                        <p>Fomentar una cultura de trabajo en equipo, innovación y responsabilidad social mediante la 
                             promoción de actividades de voluntariado, la implementación de prácticas sostenibles en la empresa 
-                            y la participación en iniciativas de responsabilidad social ciudadana.</li>
+                            y la participación en iniciativas de responsabilidad social ciudadana.</p>
                     </ol>
                 </Section>
                 <section>
-                    <h2>Acciones</h2>
+                    <h2>ACCIONES</h2>
                     <ol class="objetivos">
-                      <li>Ofrecemos servicios de reparación, venta y mantenimiento de bicicletas de alta calidad y personalizados, 
-                        utilizando tecnologías innovadoras y con un enfoque en la satisfacción del cliente.</li>
-                      <li>Proporcionamos una amplia gama de productos de alta calidad, desde bicicletas completas hasta piezas 
-                          y accesorios, para satisfacer las necesidades y preferencias de nuestros clientes.</li>
-                      <li>Ofrecemos servicios de mantenimiento preventivo y planes de mantenimiento personalizados para prolongar 
-                        la vida útil de las bicicletas y garantizar la seguridad en el uso de las mismas.</li>
-                      <li>Promovemos el uso de la bicicleta como medio de transporte sostenible a través de campañas de concientización, 
+                      <p>Ofrecemos servicios de reparación, venta y mantenimiento de bicicletas de alta calidad y personalizados, 
+                        utilizando tecnologías innovadoras y con un enfoque en la satisfacción del cliente.</p>
+                      <p>Proporcionamos una amplia gama de productos de alta calidad, desde bicicletas completas hasta piezas 
+                          y accesorios, para satisfacer las necesidades y preferencias de nuestros clientes.</p>
+                      <p>Ofrecemos servicios de mantenimiento preventivo y planes de mantenimiento personalizados para prolongar 
+                        la vida útil de las bicicletas y garantizar la seguridad en el uso de las mismas.</p>
+                      <p>Promovemos el uso de la bicicleta como medio de transporte sostenible a través de campañas de concientización, 
                         programas de incentivos y eventos comunitarios, que permitan involucrar a nuestros clientes en el cuidado del medio 
-                        ambiente.</li>
+                        ambiente.</p>
                     </ol>
                 </section>
             </div>   
@@ -147,7 +184,7 @@
         <!--Footer-->
           <footer>
             <hr>
-            <div class="container">
+            <div class="footerConfi">
               <div class="row">
                 <div class="col-md-4">
                   <h3>Información de contacto</h3>
