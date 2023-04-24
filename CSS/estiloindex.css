@@ -91,9 +91,11 @@ font-weight: bold;
     z-index: 9999;
     list-style-type: none;
 }
+
 .barrasocial li{
     list-style-type: none;
     background-color: white;
+    border-radius: 10px;
 }
 
   /*Section Nuevos Productos*/

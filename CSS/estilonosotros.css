@@ -80,6 +80,7 @@ a.dropdown-item{
 .barrasocial li{
     list-style-type: none;
     background-color: white;
+    border-radius: 10px;
 }
 
   /*Section para mision y vision*/

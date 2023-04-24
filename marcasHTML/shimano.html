@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Herramientas y Lubricantes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/estiloproductos.css">
+    </head>
+    <body>
+       <!--Header-->
+       <Header>
+        <div id="titulo-container">
+            <h1 id="msjBienvenida">¡BIENVENIDO! A NUESTRA PAGINA WEB - BICI REPUESTOS DAVID</h1>
+        </div>
+        <div >
+          <h1 class="msjTitulo">SHIMANO</h1>
+        </div>  
+       </Header>
+
+        <div class="navbar">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <img class="imgLogo" src="../images/logo1.png" alt="Logo">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Bici Repuestos David</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Accesorios
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../accesoriosHTML/herramYlubrican.html">HERRAMIENTAS Y LUBRICANTES</a></li>
+                        <li><a class="dropdown-item" href="../accesoriosHTML/SeguridadYluces.html">SEGURIDAD Y LUCES</a></li>
+                        <li><a class="dropdown-item" href="../accesoriosHTML/indumentaria.html">INDUMENTARIA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../accesoriosHTML/accesoriosVarios.html">ACCESORIOS VARIOS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../productosHTML/bicicletas.html">BICICLETAS</a></li>
+                        <li><a class="dropdown-item" href="../productosHTML/cuadros.html">CUADROS</a></li>
+                        <li><a class="dropdown-item" href="../productosHTML/suspensiones.html">SUSPENSIONES</a></li>
+                        <li><a class="dropdown-item" href="../productosHTML/arosYllantas.html">AROS Y LLANTAS</a></li>
+                        <li><a class="dropdown-item" href="../productosHTML/sistemaFrenos.html">SISTEMA DE FRENOS</a></li>
+                        <li><a class="dropdown-item" href="../productosHTML/sistemaArrastre.html">SISTEMA DE ARRASTRE</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../productosHTML/nuevosProductos.html">NUEVOS PRODUCTOS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MARCAS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="shimano.html">SHIMANO</a></li>
+                        <li><a class="dropdown-item" href="dabom.html">DABOM</a></li>
+                        <li><a class="dropdown-item" href="skull.html">SKULL</a></li>
+                        <li><a class="dropdown-item" href="bracko.html">BRACKO</a></li>
+                      </ul>
+                    <li class="nav-item">
+                          <a class="nav-link" href="../contactenos.html">CONTÁCTENOS</a>
+                    </li>
+                  </ul>
+                  <!-- Formulario para buscar -->
+                  <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Busca aqui Rider" aria-label="Search">
+                    <button class="btn btn-info" type="submit">Buscar</button>
+                  </form>
+                  
+                  <script>
+                    const form = document.getElementById('search-form');
+                    const input = document.querySelector('#search-form input[type="search"]');
+                  
+                    form.addEventListener('submit', function(event) {
+                      event.preventDefault();
+                  
+                      // Obtener el valor del input de búsqueda
+                      const searchTerm = input.value.trim().toLowerCase();
+                  
+                      // Buscar los títulos de las etiquetas h5
+                      const titles = document.getElementsByTagName('h5');
+                  
+                      // Iterar sobre los títulos y buscar la coincidencia
+                      for (let i = 0; i < titles.length; i++) {
+                        const title = titles[i];
+                        const titleText = title.textContent.trim().toLowerCase();
+                  
+                        // Si se encuentra la coincidencia, redireccionar a la página
+                        if (titleText.includes(searchTerm)) {
+                          window.location.href = title.closest('a').href;
+                          return;
+                        }
+
+                      }
+                  
+                      // Si no se encontró la coincidencia, mostrar un mensaje de error
+                      alert('No se encontraron resultados');
+                    });
+                  </script>
+                </div>
+              </div>
+          </nav>
+        </div>
+        <!-- barra social -->
+        <div class="barrasocial">
+          <ul>
+            <li><a href="https://n9.cl/bici_repuestos_david" target="_blank"><img src="../images/iconos/whatsapp.png" ></a></li>
+            <li><a href="https://www.facebook.com/BicirepuestosDavid" target="_blank"><img src="../images/iconos/facebook.png" ></a></li>
+            <li><a href="https://instagram.com/bicirepuestosdavid?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../images/iconos/instagram.png" ></a></li>
+            <li><a href="https://www.youtube.com/channel/UCElPRMIxrXMOTD1_s4gCZZg" target="_blank"><img src="../images/iconos/youtube.png" ></a></li>
+          </ul>
+        </div>
+
+        <!--Section - cuadriculas para imagenes/texto-->
+        <section>
+          <div class="row row-cols-1 row-cols-md-4 g-4"> <!-- seccion de tarjetas -->
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_121113.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Disco 200mm</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124137.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124205.jpg "class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124424.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124925.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_125328.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_125414.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_130322.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_121113.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Disco 200mm</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124137.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124205.jpg "class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124424.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_124925.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_125328.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_125414.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/nuevosProductos/IMG_20230411_130322.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!--Footer-->
+        <footer>
+          <hr>
+          <div class="footerConfi">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Información de contacto</h3>
+                <ul>
+                  <li>Dirección: Jr. Dos de Mayo 1186, Cajamarca, Perú</li>
+                  <li>Teléfono: (+51) 954074235</li>
+                  <li>Correo electrónico: bicirepuestos.david01@gmail.com</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h3>Horario de atención</h3>
+                <ul>
+                  <li>Lunes a Viernes: 8:00 am - 8:00 pm</li>
+                  <li>Sábado: 8:00 am - 12:00 pm</li>
+                  <li>Domingo: Cerrado</li>
+                </ul>
+              </div>
+              <div class="col-md-4"> 
+                <img src="../images/logo2.jpg" alt="logo2" width="100%" height="100%">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-center">&copy; 2023 Bici Repuestos David. Todos los derechos reservados.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+        <!--script de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    </body>
+</html>
